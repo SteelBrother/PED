@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrupoBIOS_PEDWEB.DM\GrupoBIOS_PEDWEB.DM.csproj" />
+    <ProjectReference Include="..\GrupoBIOS_PEDWEB.DT\GrupoBIOS_PEDWEB.DT.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="General\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+</Project>

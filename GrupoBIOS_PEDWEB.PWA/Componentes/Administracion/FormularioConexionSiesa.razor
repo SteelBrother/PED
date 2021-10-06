@@ -1,0 +1,40 @@
+﻿@inherits FormularioConexionSiesaBase
+@*<EditForm Model="Compania" OnValidSubmit="OnValidSubmit">*@
+<EditForm Model="Compania">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <label>
+                    Compañias :
+                </label>
+                <InputSelect @bind-Value="@Compania.Id" class="form-group">
+                    @foreach (var item in ListaCompanias)
+                    {
+                        <option value="@item.Id">@item.Nombre</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="col">
+                <label>Nombre</label>
+                <div>
+                    <InputText class="form-control" @bind-Value="@Compania.Nombre" />
+                    @*<ValidationMessage For="@(() => Compania.Nombre)" />*@
+                </div>
+                <label>Id Siesa</label>
+                <div>
+                    <InputNumber class="form-control" @bind-Value="@Compania.IdSiesa" />
+                    @*<ValidationMessage For="@(() => Compania.IdSiesa)" />*@
+                </div>
+                <label>Nombre DB</label>
+                <div>
+                    <InputText class="form-control" @bind-Value="@Compania.NombreDB" />
+                    @*<ValidationMessage For="@(() => Compania.NombreDB)" />*@
+                </div>
+                <br />
+                <button class="btn btn-success" type="submit"> Guardar Cambios </button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+

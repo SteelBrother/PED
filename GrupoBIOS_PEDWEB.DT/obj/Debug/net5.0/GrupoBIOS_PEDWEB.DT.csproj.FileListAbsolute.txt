@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\bin\Debug\net5.0\GrupoBIOS_PEDWEB.DT.deps.json
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\bin\Debug\net5.0\GrupoBIOS_PEDWEB.DT.dll
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\bin\Debug\net5.0\ref\GrupoBIOS_PEDWEB.DT.dll
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\bin\Debug\net5.0\GrupoBIOS_PEDWEB.DT.pdb
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.AssemblyInfo.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.dll
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\ref\GrupoBIOS_PEDWEB.DT.dll
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.DT\obj\Debug\net5.0\GrupoBIOS_PEDWEB.DT.pdb

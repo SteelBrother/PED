@@ -1,0 +1,21 @@
+﻿@page "/variablesConexionSiesa"
+@inject ICargarCompanias_ViewModel CargarCompaniasViewModel
+@inject IGuardarVariablesConexion_ViewModel GuardarVariablesConexionViewModel
+
+
+<h3 style="text-align:center">Variables de conexion</h3>
+
+<FormularioConexionSiesa Compania="GuardarVariablesConexionViewModel.Compania"
+                         OnValidSubmit="GuardarVariablesConexionViewModel.GuardarCompaniaAsync"
+                         ListaCompanias="ListaCompanias">
+</FormularioConexionSiesa>
+
+
+@code{
+    private List<Compania> ListaCompanias { get; set; }
+
+    protected async override void OnInitialized()
+    {
+        ListaCompanias = await CargarCompaniasViewModel.CargarCompanias();
+    }
+}
