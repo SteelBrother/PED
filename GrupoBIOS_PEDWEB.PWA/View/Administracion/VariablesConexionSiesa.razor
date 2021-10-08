@@ -7,15 +7,21 @@
 
 <FormularioConexionSiesa Compania="GuardarVariablesConexionViewModel.Compania"
                          OnValidSubmit="GuardarVariablesConexionViewModel.GuardarCompaniaAsync"
-                         ListaCompanias="ListaCompanias">
+                         ListaCompanias="CargarCompaniasViewModel.ListaCompanias">
 </FormularioConexionSiesa>
 
 
-@code{
-    private List<Compania> ListaCompanias { get; set; }
 
+
+
+
+
+@code{
+
+    private List<Compania> ListCompany { get; set; }
     protected async override void OnInitialized()
     {
-        ListaCompanias = await CargarCompaniasViewModel.CargarCompanias();
+        ListCompany = await CargarCompaniasViewModel.CargarCompanias();
+
     }
 }

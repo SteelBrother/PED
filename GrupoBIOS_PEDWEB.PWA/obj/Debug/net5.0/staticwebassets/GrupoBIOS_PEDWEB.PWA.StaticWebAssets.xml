@@ -1,4 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="/" Path="C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\" />
   <ContentRoot BasePath="/" Path="C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/MatBlazor" Path="C:\Users\Admin\.nuget\packages\matblazor\2.8.0\build\..\staticwebassets\" />
 </StaticWebAssets>

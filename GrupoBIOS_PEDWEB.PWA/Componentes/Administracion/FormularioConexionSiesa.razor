@@ -1,40 +1,86 @@
 ﻿@inherits FormularioConexionSiesaBase
+
 @*<EditForm Model="Compania" OnValidSubmit="OnValidSubmit">*@
-<EditForm Model="Compania">
-    <DataAnnotationsValidator />
-    <div class="form-group">
-        <div class="row">
-            <div class="col">
-                <label>
-                    Compañias :
-                </label>
-                <InputSelect @bind-Value="@Compania.Id" class="form-group">
-                    @foreach (var item in ListaCompanias)
-                    {
-                        <option value="@item.Id">@item.Nombre</option>
-                    }
-                </InputSelect>
-            </div>
-            <div class="col">
-                <label>Nombre</label>
-                <div>
-                    <InputText class="form-control" @bind-Value="@Compania.Nombre" />
-                    @*<ValidationMessage For="@(() => Compania.Nombre)" />*@
+
+<div class="grid-container">
+    <br />
+    <EditForm Model="Compania">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Compañias :
+                    </label>
+                    <br /><br />
+
+                    @*<InputSelect @bind-Value="@Compania.Id" class="form-control">
+                            <option value="0"> Seleccione una compañia</option>
+                            @foreach (var item in ListaCompanias)
+                            {
+                                <option value="@item.Id">@item.Nombre</option>
+                            }
+                        </InputSelect>*@
+
+                    <MatSelectValue @bind-Value="@CompaniaSeleccionada" Items="@value1Items" ValueSelector=@(i=>i.ToString()) Style="width:80%"></MatSelectValue>
+                    <br /><br />
+                    <MatButton Outlined="true" OnClick="@(() => OpenPromptFromService())"> Guardar Cambios </MatButton>
+                    <MatButton Outlined="true" OnClick="@(() => OpenPromptFromService())"> Crear Compañia  </MatButton>
                 </div>
-                <label>Id Siesa</label>
-                <div>
-                    <InputNumber class="form-control" @bind-Value="@Compania.IdSiesa" />
-                    @*<ValidationMessage For="@(() => Compania.IdSiesa)" />*@
+                <div class="col">
+                    <br /><br />
+                          <MatAccordion>
+                              <MatExpansionPanel Style="box-shadow: none;">
+                                  <MatExpansionPanelSummary>
+                                      <MatExpansionPanelHeader>
+                                          <div>
+                                              Compañia
+                                          </div>
+                                      </MatExpansionPanelHeader>
+                                  </MatExpansionPanelSummary>
+                                  <MatExpansionPanelDetails Class="detalles-acordeon">
+                                      <div class="content">
+                                          <MatStringField @bind-Value="@Compania.Nombre" Label="Nombre Compañia"></MatStringField>
+                                          <ValidationMessage For="@(() => Compania.Nombre)" />
+                                      </div>
+                                  </MatExpansionPanelDetails>
+                              </MatExpansionPanel>
+                              <MatExpansionPanel Style="box-shadow: none;">
+                                  <MatExpansionPanelSummary>
+                                      <MatExpansionPanelHeader>
+                                          <div>
+                                              Administracion SQL
+                                          </div>
+                                      </MatExpansionPanelHeader>
+                                  </MatExpansionPanelSummary>
+                                  <MatExpansionPanelDetails Class="detalles-acordeon">
+                                      <div class="content">
+                                          <MatStringField @bind-Value="@Compania.NombreDB" Label="Nombre DB"></MatStringField>
+                                          <ValidationMessage For="@(() => Compania.NombreDB)" />
+                                      </div>
+                                  </MatExpansionPanelDetails>
+                              </MatExpansionPanel>
+                              <MatExpansionPanel Style="box-shadow: none;">
+                                  <MatExpansionPanelSummary>
+                                      <MatExpansionPanelHeader>
+                                          <div>
+                                              Configuración Siesa
+                                          </div>
+                                      </MatExpansionPanelHeader>
+                                  </MatExpansionPanelSummary>
+                                  <MatExpansionPanelDetails Class="detalles-acordeon">
+                                      <div class="content">
+                                          <MatTextField @bind-Value="@Compania.IdSiesa" Label="Id Siesa"></MatTextField>
+                                          <ValidationMessage For="@(() => Compania.IdSiesa)" />
+                                      </div>
+                                  </MatExpansionPanelDetails>
+                              </MatExpansionPanel>
+                          </MatAccordion>
                 </div>
-                <label>Nombre DB</label>
-                <div>
-                    <InputText class="form-control" @bind-Value="@Compania.NombreDB" />
-                    @*<ValidationMessage For="@(() => Compania.NombreDB)" />*@
-                </div>
-                <br />
-                <button class="btn btn-success" type="submit"> Guardar Cambios </button>
             </div>
         </div>
-    </div>
-</EditForm>
+    </EditForm>
+</div>
+
+
 

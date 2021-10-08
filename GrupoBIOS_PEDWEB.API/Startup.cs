@@ -34,11 +34,38 @@ namespace GrupoBIOS_PEDWEB.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GrupoBIOS_PEDWEB.API", Version = "v1" });
             });
-            ConfigureBMs(services);
+            
             services.AddTransient<IConexionBD, ConexionInsightDB>();
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+            ConfigureBMs(services);
         }
 
+
+        
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GrupoBIOS_PEDWEB.API v1"));
+            }
+            app.UseCors("AllowAll");
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
 
         private static void ConfigureBMs(IServiceCollection services)
         {
@@ -56,27 +83,6 @@ namespace GrupoBIOS_PEDWEB.API
                 }
             }
 
-        }
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GrupoBIOS_PEDWEB.API v1"));
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         }
     }
 }

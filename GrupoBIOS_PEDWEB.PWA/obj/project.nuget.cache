@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gJYoTZ8ItCNhmYFpTqp6fVprZY7Q0TfEVRIVNIcbvI241gW5zyZEa8EvWk2vetfBgN3gxxrZ2ZIiujMxPs9yqQ==",
+  "dgSpecHash": "ZFwnVm/Wq9stsgk3we2YiZBYYI8ZB5tX91Rjz9wO61uwPJT3t/PCGWpb2tUWbisBPIqHAG1jvOyn97jPJu43lw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\GrupoBIOS_PEDWEB\\GrupoBIOS_PEDWEB.PWA\\GrupoBIOS_PEDWEB.PWA.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\insight.database.core\\6.3.7\\insight.database.core.6.3.7.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\insight.database.providers.default\\6.3.7\\insight.database.providers.default.6.3.7.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\insight.database.providers.mssqlclient\\6.3.7\\insight.database.providers.mssqlclient.6.3.7.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\matblazor\\2.8.0\\matblazor.2.8.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.10\\microsoft.aspnetcore.authorization.5.0.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.10\\microsoft.aspnetcore.components.5.0.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.10\\microsoft.aspnetcore.components.analyzers.5.0.10.nupkg.sha512",

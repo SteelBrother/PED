@@ -22,12 +22,56 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion
             _logger = logger;
         }
 
+       
+
+        public async Task<ActionResult<Compania>> ObtenerCompaniaPorId(int Id)
+        {
+            try
+            {
+                var response = await _conexionBD.QueryFirstAsync<Compania>("SP_Siesa_ObtenerCompaniaPorId", Id);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Ha ocurrido un {GetType().Name}/{MethodBase.GetCurrentMethod().DeclaringType.Name}: {ex.Message}");
+                return null;
+            }
+        }
+
         public async Task<ActionResult<ICollection<Compania>>> ObtenerCompanias()
         {
             try
             {
-                var Companias = await _conexionBD.QueryAsync<Compania>("SP_Siesa_ConsultarCompanias");
-                return Companias.ToList();
+                var response = await _conexionBD.QueryAsync<Compania>("SP_Siesa_ConsultarCompanias");
+                return response.ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Ha ocurrido un {GetType().Name}/{MethodBase.GetCurrentMethod().DeclaringType.Name}: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<ActionResult<List<string>>> ActualizarCompañia(Compania Compañia)
+        {
+            try
+            {
+                var response = await _conexionBD.QueryAsync<string>("SP_Siesa_ActualizarCompania", Compañia);
+                return response.ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Ha ocurrido un {GetType().Name}/{MethodBase.GetCurrentMethod().DeclaringType.Name}: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<ActionResult<List<string>>> GuardarCompañia(Compania Compañia)
+        {
+            try
+            {
+                var response = await _conexionBD.QueryAsync<string>("SP_Siesa_GuardarCompania", Compañia);
+                return response.ToList();
             }
             catch (Exception ex)
             {

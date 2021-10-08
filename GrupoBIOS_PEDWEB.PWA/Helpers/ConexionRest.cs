@@ -29,16 +29,28 @@ namespace GrupoBIOS_PEDWEB.PWA.Helpers
 
         public async Task<HttpResponseWrapper<T>> Get<T>(string url)
         {
-            var responseHTTP = await _httpClient.GetAsync(url);
-            if (responseHTTP.IsSuccessStatusCode)
+            try
             {
-                var response = await DeserializarRespuesta<T>(responseHTTP, OpcionesPorDefectoJSON);
-                return new HttpResponseWrapper<T>(response, false, responseHTTP);
+                var responseHTTP = await _httpClient.GetAsync(url);
+            //https://localhost:44348/api/Companias
+
+                if (responseHTTP.IsSuccessStatusCode)
+                {
+                    var response = await DeserializarRespuesta<T>(responseHTTP, OpcionesPorDefectoJSON);
+                    return new HttpResponseWrapper<T>(response, false, responseHTTP);
+                }
+                else
+                {
+                    return new HttpResponseWrapper<T>(default, true, responseHTTP);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return new HttpResponseWrapper<T>(default, true, responseHTTP);
+
+                _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
+                return default;
             }
+            
         }
 
         public async Task<HttpResponseWrapper<object>> Post<T>(string url, T enviar)

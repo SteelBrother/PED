@@ -1,4 +1,5 @@
-﻿using GrupoBIOS_PEDWEB.DT.Entidades;
+﻿using GrupoBIOS_PEDWEB.DT.DTOs;
+using GrupoBIOS_PEDWEB.DT.Entidades;
 using GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion.Interfaces;
 using GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion.Interfaces;
 using System;
@@ -21,7 +22,16 @@ namespace GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion
 
         public async Task<List<Compania>> CargarCompanias()
         {
-            return ListaCompanias = await _CargarCompanias.CargarCompañias();
+            try
+            {
+                ListaCompanias = await _CargarCompanias.CargarCompañias();
+                return ListaCompanias;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
     }
 }

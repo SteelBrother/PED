@@ -11,6 +11,9 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion.Interfaces
     public interface IBMCompania
     {
         Task<ActionResult<ICollection<Compania>>> ObtenerCompanias();
-
+        Task<ActionResult<Compania>> ObtenerCompaniaPorId(int Id);
+        Task<ActionResult<List<string>>> ActualizarCompañia(Compania Compañia);
+        Task<ActionResult<List<string>>> GuardarCompañia(Compania Compañia);
+       
     }
 }

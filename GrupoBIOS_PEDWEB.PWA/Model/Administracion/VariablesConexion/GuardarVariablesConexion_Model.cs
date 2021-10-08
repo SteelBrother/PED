@@ -33,11 +33,11 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
                 if (httpResponse.Error)
                 {
                     _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
-                    await _mostrarMensajes.MostrarMensajeError("No se ha podido crear variables de conexion para la compañia, intentelo de nuevo.");
+                    //await _mostrarMensajes.MostrarMensajeError("No se ha podido crear variables de conexion para la compañia, intentelo de nuevo.");
                 }
                 else
                 {
-                    await _mostrarMensajes.MostrarMensajeExitoso("Se ha creado las variables de conexion de la compania exitosamente.");
+                    //await _mostrarMensajes.MostrarMensajeExitoso("Se ha creado las variables de conexion de la compania exitosamente.");
                 }
             }
             catch (Exception ex)
@@ -45,7 +45,7 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
                 if (ex.GetType().ToString() != "WebAssembly.JSException" && ex.GetType().ToString() != "System.Net.Http.HttpRequestException" && ex.GetType().ToString() != "System.OperationCanceledException")
                 {
                     _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
-                    await _mostrarMensajes.MostrarMensajeError("No se ha podido crear la Compañia, intentelo de nuevo.");
+                    //await _mostrarMensajes.MostrarMensajeError("No se ha podido crear la Compañia, intentelo de nuevo.");
                 }
             }
         }

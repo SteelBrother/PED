@@ -78,6 +78,32 @@
           "lib/netstandard2.0/Insight.Database.Providers.MsSqlClient.dll": {}
         }
       },
+      "MatBlazor/2.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.10",
+          "Microsoft.AspNetCore.Components.Web": "3.1.10"
+        },
+        "compile": {
+          "lib/netstandard2.1/MatBlazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MatBlazor.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.1/Properties/launchSettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/MatBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MatBlazor.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/5.0.10": {
         "type": "package",
         "dependencies": {
@@ -1820,6 +1846,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Insight.Database.Providers.MsSqlClient.dll": {}
+        }
+      },
+      "MatBlazor/2.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.10",
+          "Microsoft.AspNetCore.Components.Web": "3.1.10"
+        },
+        "compile": {
+          "lib/netstandard2.1/MatBlazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MatBlazor.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.1/Properties/launchSettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/MatBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MatBlazor.props": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/5.0.10": {
@@ -3619,6 +3671,27 @@
         "lib/net46/Insight.Database.Providers.MsSqlClient.xml",
         "lib/netstandard2.0/Insight.Database.Providers.MsSqlClient.dll",
         "lib/netstandard2.0/Insight.Database.Providers.MsSqlClient.xml"
+      ]
+    },
+    "MatBlazor/2.8.0": {
+      "sha512": "NAbkrLR6YdEXNtQQreJOAdZEqTBeG6wXiTxs9ItHBCLnoCouX//VELHakDXcMtK27QzmeB8uGRwWIkglvhpKLg==",
+      "type": "package",
+      "path": "matblazor/2.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MatBlazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/MatBlazor.props",
+        "buildTransitive/MatBlazor.props",
+        "content/Properties/launchSettings.json",
+        "contentFiles/any/netstandard2.1/Properties/launchSettings.json",
+        "lib/netstandard2.1/MatBlazor.dll",
+        "lib/netstandard2.1/MatBlazor.xml",
+        "matblazor.2.8.0.nupkg.sha512",
+        "matblazor.nuspec",
+        "staticwebassets/dist/matBlazor.css",
+        "staticwebassets/dist/matBlazor.js"
       ]
     },
     "Microsoft.AspNetCore.Authorization/5.0.10": {
@@ -8609,6 +8682,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "GrupoBIOS_PEDWEB.DT >= 1.0.0",
+      "MatBlazor >= 2.8.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.10",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.10",
       "Microsoft.AspNetCore.Http >= 2.2.2",
@@ -8664,6 +8738,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "MatBlazor": {
+            "target": "Package",
+            "version": "[2.8.0, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[5.0.10, )"

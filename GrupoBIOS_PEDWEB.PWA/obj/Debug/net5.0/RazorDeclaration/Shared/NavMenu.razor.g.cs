@@ -110,6 +110,13 @@ using GrupoBIOS_PEDWEB.PWA.Componentes.Administracion;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -118,7 +125,7 @@ using GrupoBIOS_PEDWEB.PWA.Componentes.Administracion;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\Shared\NavMenu.razor"
+#line 28 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

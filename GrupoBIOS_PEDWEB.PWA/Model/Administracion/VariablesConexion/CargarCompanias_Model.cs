@@ -1,4 +1,6 @@
-﻿using GrupoBIOS_PEDWEB.DT.Entidades;
+﻿using GrupoBIOS_PEDWEB.DT.DTOs;
+using GrupoBIOS_PEDWEB.DT.Entidades;
+using GrupoBIOS_PEDWEB.PWA.Helpers;
 using GrupoBIOS_PEDWEB.PWA.Helpers.Interfaces;
 using GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion.Interfaces;
 using Microsoft.Extensions.Logging;
@@ -29,14 +31,14 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
             {
                 var ApiUrl = await _settings.GetApiUrl();
 
-                var httpResponse = await _conexion.Get<List<Compania>>($"https://localhost:44392/api/Compania");
+                var httpResponse = await _conexion.Get<List<Compania>>($"{ApiUrl}/Companias");
 
                 if (!httpResponse.Error)
                 {
-                    await _mostrarMensajes.MostrarMensajeExitoso("Se ha cargado las compañias exitosamente.");
-                    return httpResponse.Response;
+                    //await _mostrarMensajes.MostrarMensajeExitoso("Se ha cargado las compañias exitosamente.");
+                    return httpResponse.Response.ToList();
                 }
-                await _mostrarMensajes.MostrarMensajeError("No se ha podido cargar las compañias, intentelo de nuevo.");
+                //await _mostrarMensajes.MostrarMensajeError("No se ha podido cargar las compañias, intentelo de nuevo.");
                 return new List<Compania>();
 
             }
@@ -45,7 +47,7 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
                 if (ex.GetType().ToString() != "WebAssembly.JSException" && ex.GetType().ToString() != "System.Net.Http.HttpRequestException" && ex.GetType().ToString() != "System.OperationCanceledException")
                 {
                     _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
-                    await _mostrarMensajes.MostrarMensajeError("No se ha podido cargar la Compañia, intentelo de nuevo.");
+                    //await _mostrarMensajes.MostrarMensajeError("No se ha podido cargar la Compañia, intentelo de nuevo.");
                 }
                 return new List<Compania>();
             }

@@ -13,6 +13,7 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Core.dll.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Providers.Default.dll.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Providers.MsSqlClient.dll.gz
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\MatBlazor.dll.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.dll.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.dll.gz
@@ -234,6 +235,7 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Core.dll
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Providers.Default.dll
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Insight.Database.Providers.MsSqlClient.dll
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\MatBlazor.dll
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.dll
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.dll
@@ -459,11 +461,13 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.RazorComponent.input.cache
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Componentes\Administracion\FormularioConexionSiesa.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\View\Administracion\VariablesConexionSiesa.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\View\Productos\Productos.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -473,11 +477,13 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.TagHelpers.output.cache
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.RazorCoreGenerate.cache
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Componentes\Administracion\FormularioConexionSiesa.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\View\Administracion\VariablesConexionSiesa.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\View\Productos\Productos.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
@@ -486,6 +492,7 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\0Rwd5Q9E.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\ZW4zRt6+.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\afwFt5Qm.gz
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\T0rBOGfb.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\rCRLVPbT.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\Y71IKecU.gz
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\build-gz\hyrN4nKC.gz
@@ -715,5 +722,5 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.pdb
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\service-worker-assets.js
-C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Componentes\Administracion\FormularioConexionSiesa.razor.g.cs
-C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Componentes\Administracion\FormularioConexionSiesa.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Componentes\Administracion\AgregarCompania.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Componentes\Administracion\AgregarCompania.razor.g.cs

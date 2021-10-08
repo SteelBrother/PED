@@ -1,6 +1,9 @@
 {
   "cacheBootResources": true,
-  "config": [ ],
+  "config": [
+    "appsettings.development.json",
+    "appsettings.json"
+  ],
   "debugBuild": true,
   "entryAssembly": "GrupoBIOS_PEDWEB.PWA",
   "icuDataMode": 0,
@@ -12,6 +15,7 @@
       "Insight.Database.Core.dll": "sha256-qe04uuv8UyDKlZNR2gtnFQo+ZSRj0VpMnSI1N9ggIag=",
       "Insight.Database.Providers.Default.dll": "sha256-jorczOwa4SR1PEWVNHok+HVq+HqBKI\/xoVzrmOYj\/oI=",
       "Insight.Database.Providers.MsSqlClient.dll": "sha256-ASa5gRHrpS6A4HcqOsDnwvy0jShkARHHilgo\/9a8nP0=",
+      "MatBlazor.dll": "sha256-w+DEscEPLXa2QwjGoRMEy1XDOSGPM8O3p9QFXlTiea4=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-Qs05+jXr6ExLqKHmpkMovKl\/fBhD8otN+T2ZtL9Vlrc=",
       "Microsoft.AspNetCore.Components.dll": "sha256-x4ddqjUyODALx4h32YVXlEiGn0AU+nR1KVVO2AWPo7c=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-BmRcmiSxXRVnZk0v6cERnXlUBpHGJxp\/Vt6F37Oce44=",
@@ -220,13 +224,13 @@
       "mscorlib.dll": "sha256-7WjHY56PbksCp7YOxNV59r6MqLujjAH8vhnMJ+zVezY=",
       "netstandard.dll": "sha256-5TcSqPhm3fAT6s3NH7+BMGakcfGgZGd3\/\/cVwVs2VPI=",
       "System.Private.CoreLib.dll": "sha256-VJv3DLM\/G0m\/RnTeWL9X8mkbxlsn8nNRhm0BHYEY+uo=",
-      "GrupoBIOS_PEDWEB.DT.dll": "sha256-u9\/R\/9bOFQeqp24HfSWYIjWWk016YHaiCps3VW2tkRM=",
-      "GrupoBIOS_PEDWEB.PWA.dll": "sha256-biKtF7adeHnwol+hZFtgGBbzBSxx++C7H2rof8h+dns="
+      "GrupoBIOS_PEDWEB.DT.dll": "sha256-zi1p9OhZep6dNAmHVnUP9ik3QCBRrKDgxj\/bf6W5ic8=",
+      "GrupoBIOS_PEDWEB.PWA.dll": "sha256-3aVryIMyvJzuZw85jlvmMeB+02M4HshZI+tFn5qrVdw="
     },
     "lazyAssembly": null,
     "pdb": {
-      "GrupoBIOS_PEDWEB.DT.pdb": "sha256-7oX9wO6LFDis0Zdtqod+4bvqeh3NNaK6+0m1JAKMPwg=",
-      "GrupoBIOS_PEDWEB.PWA.pdb": "sha256-u67HFbBjo6+aK8gWFJ0kKIa2DfCRCGSNxudjZfLOBS4="
+      "GrupoBIOS_PEDWEB.DT.pdb": "sha256-xQohJUjqvS51h8aUEcwgabOX2R7lr9X6pqyEfOXhnZU=",
+      "GrupoBIOS_PEDWEB.PWA.pdb": "sha256-04UY0PpedRL40Z36hp5n+Id3fUGEDqUTfb0g6Nrl5qk="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-PvlHrby1PYtdX46ITs6pB8iDNqXNcewh8Eoa\/Gm2+GM=",

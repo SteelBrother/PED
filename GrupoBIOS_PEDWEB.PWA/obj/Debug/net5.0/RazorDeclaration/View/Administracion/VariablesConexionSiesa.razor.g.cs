@@ -110,6 +110,13 @@ using GrupoBIOS_PEDWEB.PWA.Componentes.Administracion;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/variablesConexionSiesa")]
     public partial class VariablesConexionSiesa : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -119,13 +126,14 @@ using GrupoBIOS_PEDWEB.PWA.Componentes.Administracion;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
+#line 19 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
       
-    private List<Compania> ListaCompanias { get; set; }
 
+    private List<Compania> ListCompany { get; set; }
     protected async override void OnInitialized()
     {
-        ListaCompanias = await CargarCompaniasViewModel.CargarCompanias();
+        ListCompany = await CargarCompaniasViewModel.CargarCompanias();
+
     }
 
 #line default

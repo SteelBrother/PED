@@ -11,6 +11,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using MatBlazor;
+
 
 namespace GrupoBIOS_PEDWEB.PWA
 {
@@ -32,6 +34,7 @@ namespace GrupoBIOS_PEDWEB.PWA
         private static void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
+            services.AddMatBlazor();
             services.AddSingleton<ILogModel, LogModel>();
             services.AddSingleton<IConexionRest, ConexionREST>();
             services.AddSingleton<IMostrarMensajes, MostrarMensajes>();

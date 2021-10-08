@@ -110,6 +110,13 @@ using GrupoBIOS_PEDWEB.PWA.Componentes.Administracion;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
     public partial class SurveyPrompt : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
