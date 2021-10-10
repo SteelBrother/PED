@@ -724,3 +724,7 @@ C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.pdb
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\service-worker-assets.js
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.Properties.Resources.resources
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\GrupoBIOS_PEDWEB.PWA.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\RazorDeclaration\Componentes\Administracion\GuardarCompaniaModalForm.razor.g.cs
+C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\obj\Debug\net5.0\Razor\Componentes\Administracion\GuardarCompaniaModalForm.razor.g.cs

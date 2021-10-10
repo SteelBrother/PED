@@ -11,5 +11,6 @@ namespace GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion.Interf
         Compania Compania { get; set; }
 
         Task GuardarCompaniaAsync(Compania compania);
+        Task ActualizarCompaniaAsync(Compania compania);
     }
 }

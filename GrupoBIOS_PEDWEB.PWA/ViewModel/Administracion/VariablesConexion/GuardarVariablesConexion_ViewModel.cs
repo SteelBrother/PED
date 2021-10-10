@@ -22,5 +22,10 @@ namespace GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion
         {
             await _GuardarVariablesConexionModel.GuardarCompañia(compania);
         }
+
+        public async Task ActualizarCompaniaAsync(Compania compania)
+        {
+            await _GuardarVariablesConexionModel.ActualizarCompania(compania);
+        }
     }
 }

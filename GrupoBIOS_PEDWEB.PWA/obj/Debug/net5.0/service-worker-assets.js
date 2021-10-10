@@ -9,7 +9,7 @@
       "url": "_content\/MatBlazor\/dist\/matBlazor.js"
     },
     {
-      "hash": "sha256-rkFwfCTefSpSb\/nb6bf\/CeJoLv0smCowOVJZISe15fk=",
+      "hash": "sha256-VEbdFbxLYRqlQTfIfcDsmlQIj5TBcaYlFrH7936sbPc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -905,11 +905,11 @@
       "url": "_framework\/GrupoBIOS_PEDWEB.DT.pdb"
     },
     {
-      "hash": "sha256-FMTYBm+UI3QkG34cV\/TAI9qXknuNuyYwV1L1ZWW4fyY=",
+      "hash": "sha256-J0TezErk3LxNbhFCa1O5prYa8IpirbrZioN4zu5WT54=",
       "url": "_framework\/GrupoBIOS_PEDWEB.PWA.dll"
     },
     {
-      "hash": "sha256-\/+zWnWhAvBzDiNdU8y0vj\/38A0lNJ3\/RCnt8bc+ulAE=",
+      "hash": "sha256-If6dIumCY3IzmInfWWj0AB335fyE3p6+oifIfeJ1cjg=",
       "url": "_framework\/GrupoBIOS_PEDWEB.PWA.pdb"
     },
     {
@@ -1869,8 +1869,12 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-mJ4Vopfs3M8QLz3pyOux2QMhd16vRD8WJw8VtJ2cYIg=",
+      "hash": "sha256-SWsJtOnJ+aCGFbhfQNvQWgNX2R3wdmi3wyeen4QX+UM=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-7hWzPHJYyJ1bCeVX\/vMD\/gnFtHcGIBMXk22NBcF8XH8=",
+      "url": "js\/Utilidades.js"
     },
     {
       "hash": "sha256-hOaC5nO3S\/VSfVvnkpjYvXQDltFmtk+Fc55A0aEMBlg=",
@@ -1889,5 +1893,5 @@
       "url": "GrupoBIOS_PEDWEB.PWA.bundle.scp.css"
     }
   ],
-  "version": "eOHv7Jr9"
+  "version": "hjEMJM1c"
 };

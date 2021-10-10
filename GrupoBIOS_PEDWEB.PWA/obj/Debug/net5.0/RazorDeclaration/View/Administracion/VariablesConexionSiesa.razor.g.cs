@@ -133,13 +133,12 @@ using GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.Productos.Interfaces;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 100 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
+#line 101 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
       
 
-    //public int CompaniaSeleccionada { get; set; }
     int CompaniaSeleccionada = 0;
-
-    public Compania compania = new Compania();
+    BaseMatMenu MenuUsuario;
+    Compania compania = new Compania();
     protected async override void OnInitialized()
     {
         await CargarCompaniasViewModel.CargarCompanias();
@@ -148,44 +147,39 @@ using GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.Productos.Interfaces;
 
     public async void CompaniaHasChanged(ChangeEventArgs e)
     {
-        try
+
+        CompaniaSeleccionada = int.Parse(e.Value.ToString());
+
+        if (CompaniaSeleccionada != 0)
         {
-            CompaniaSeleccionada = int.Parse(e.Value.ToString());
+            var response = await CargarCompaniasViewModel.CargarCompaniaPorId(CompaniaSeleccionada);
 
-            if (CompaniaSeleccionada != 0)
-            {
-                var response = await CargarCompaniasViewModel.CargarCompaniaPorId(CompaniaSeleccionada);
-
-                compania.Id = response.Id;
-                compania.Nombre = response.Nombre;
-                compania.IdSiesa = response.IdSiesa;
-                compania.NombreDB = response.NombreDB;
-                StateHasChanged();
-            }
+            compania.Id = response.Id;
+            compania.Nombre = response.Nombre;
+            compania.IdSiesa = response.IdSiesa;
+            compania.NombreDB = response.NombreDB;
+            StateHasChanged();
         }
-        catch (Exception)
-        {
-
-            throw;
-        }
-
     }
 
     async void GuardarCompania()
     {
         try
         {
-            await GuardarVariablesConexionViewModel.GuardarCompaniaAsync(compania);
+            await GuardarVariablesConexionViewModel.ActualizarCompaniaAsync(compania);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
 
-            throw;
+            throw new InvalidOperationException($"No se pudo actualizar compañia {ex}");
         }
     }
 
-    async void CrearCompania()
+    async Task OpenDialogFromService()
     {
+
+        await MatDialogService.OpenAsync(typeof(GuardarCompaniaModalForm), null);
+
     }
 
 

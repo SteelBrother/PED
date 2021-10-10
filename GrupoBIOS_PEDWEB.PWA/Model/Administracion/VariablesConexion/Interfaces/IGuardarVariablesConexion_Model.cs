@@ -9,5 +9,6 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion.Interfaces
     public interface IGuardarVariablesConexionModel
     {
         Task GuardarCompañia(Compania Compañia);
+        Task ActualizarCompania(Compania Compañia);
     }
 }

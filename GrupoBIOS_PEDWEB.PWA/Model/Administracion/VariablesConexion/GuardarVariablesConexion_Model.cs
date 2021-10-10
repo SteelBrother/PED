@@ -23,22 +23,62 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
             _mostrarMensajes = mostrarMensajes;
             _logger = logger;
         }
+
+        public async Task ActualizarCompania(Compania Compañia)
+        {
+            try
+            {
+                var ApiUrl = await _settings.GetApiUrl();
+                if (ApiUrl != null)
+                {
+                    var httpResponse = await _conexion.Put($"{ApiUrl}/Companias", Compañia);
+                    if (httpResponse.Error)
+                    {
+                        _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
+                    }
+                    else
+                    {
+                        await _mostrarMensajes.MostrarMensajeExitoso("Compañia actualizada con Exito.");
+                    }
+                }
+                else
+                {
+                    _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                if (ex.GetType().ToString() != "WebAssembly.JSException" && ex.GetType().ToString() != "System.Net.Http.HttpRequestException" && ex.GetType().ToString() != "System.OperationCanceledException")
+                {
+                    _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
+                    //await _mostrarMensajes.MostrarMensajeError("No se ha podido crear la Compañia, intentelo de nuevo.");
+                }
+            }
+        }
+
         public async Task GuardarCompañia(Compania Compañia)
         {
             try
             {
                 var ApiUrl = await _settings.GetApiUrl();
-
-                var httpResponse = await _conexion.Post<Compania, Compania>($"{ApiUrl}/Compañias", Compañia);
-                if (httpResponse.Error)
+                if (ApiUrl != null)
                 {
-                    _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
-                    //await _mostrarMensajes.MostrarMensajeError("No se ha podido crear variables de conexion para la compañia, intentelo de nuevo.");
+                    var httpResponse = await _conexion.Post<Compania, Compania>($"{ApiUrl}/Companias", Compañia);
+                    if (httpResponse.Error)
+                    {
+                        _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
+                    }
+                    else
+                    {
+                        await _mostrarMensajes.MostrarMensajeExitoso("Compañia creada con Exito.");
+                    }
                 }
                 else
                 {
-                    //await _mostrarMensajes.MostrarMensajeExitoso("Se ha creado las variables de conexion de la compania exitosamente.");
+                    _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
                 }
+
             }
             catch (Exception ex)
             {
