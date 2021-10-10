@@ -22,7 +22,7 @@
                             }
                         </InputSelect>*@
 
-                    <MatSelectValue @bind-Value="@CompaniaSeleccionada" Items="@value1Items" ValueSelector=@(i=>i.ToString()) Style="width:80%"></MatSelectValue>
+                    <MatSelectValue @bind-Value="@CompaniaSeleccionada" @onchange="@((ChangeEventArgs e) => DepartamentoHasChanged(e))" Items="@NombreCompanias" ValueSelector=@(i=>i.ToString()) Style="width:80%"></MatSelectValue>
                     <br /><br />
                     <MatButton Outlined="true" OnClick="@(() => OpenPromptFromService())"> Guardar Cambios </MatButton>
                     <MatButton Outlined="true" OnClick="@(() => OpenPromptFromService())"> Crear Compañia  </MatButton>

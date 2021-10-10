@@ -28,8 +28,21 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion
         {
             try
             {
-                var response = await _conexionBD.QueryFirstAsync<Compania>("SP_Siesa_ObtenerCompaniaPorId", Id);
-                return response;
+                var response = await _conexionBD.QueryFirstAsync<Compania>("SP_Siesa_ConsultarCompaniaPorId", new { Id } );
+
+                if (response != null)
+                {
+                    Compania compania = new Compania()
+                    {
+                        Id = response.Id,
+                        Nombre = response.Nombre,
+                        IdSiesa = response.IdSiesa,
+                        NombreDB = response.NombreDB
+                    };
+                    return compania;
+                }
+                return new Compania();
+                
             }
             catch (Exception ex)
             {
@@ -43,7 +56,22 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion
             try
             {
                 var response = await _conexionBD.QueryAsync<Compania>("SP_Siesa_ConsultarCompanias");
-                return response.ToList();
+                List<Compania> Compañias = new List<Compania>();
+                if (response.Any())
+                {
+                    foreach (var item in response)
+                    {
+                        Compania compania = new Compania()
+                        {
+                            Id = item.Id,
+                            Nombre = item.Nombre,
+                            IdSiesa = item.IdSiesa,
+                            NombreDB = item.NombreDB
+                        };
+                        Compañias.Add(compania);
+                    }
+                }
+                return Compañias;
             }
             catch (Exception ex)
             {
@@ -52,11 +80,11 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion
             }
         }
 
-        public async Task<ActionResult<List<string>>> ActualizarCompañia(Compania Compañia)
+        public async Task<ActionResult<List<int>>> ActualizarCompañia(Compania Compañia)
         {
             try
             {
-                var response = await _conexionBD.QueryAsync<string>("SP_Siesa_ActualizarCompania", Compañia);
+                var response = await _conexionBD.QueryAsync<int>("SP_Siesa_ActualizarCompania", Compañia);
                 return response.ToList();
             }
             catch (Exception ex)

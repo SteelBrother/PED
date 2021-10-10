@@ -18,9 +18,9 @@ namespace GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion
             _GuardarVariablesConexionModel = GuardarVariablesConexionModel;
         }
 
-        public async Task GuardarCompaniaAsync()
+        public async Task GuardarCompaniaAsync(Compania compania)
         {
-            await _GuardarVariablesConexionModel.GuardarCompañia(Compania);
+            await _GuardarVariablesConexionModel.GuardarCompañia(compania);
         }
     }
 }

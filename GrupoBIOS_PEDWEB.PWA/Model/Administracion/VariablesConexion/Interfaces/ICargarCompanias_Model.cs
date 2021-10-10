@@ -10,5 +10,6 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion.Interfaces
     public interface ICargarCompanias_Model
     {
         Task<List<Compania>> CargarCompañias();
+        Task<Compania> CargarCompaniaPorId(int Id);
     }
 }

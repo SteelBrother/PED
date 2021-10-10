@@ -25,10 +25,10 @@ namespace GrupoBIOS_PEDWEB.API.Controllers
             return await _BMCompania.ObtenerCompanias();
         }
 
-        [HttpGet("{IdSiesa}")]
-        public async Task<ActionResult<Compania>> GetCompaniaPorId(int IdSiesa)
+        [HttpGet("{Id}")]
+        public async Task<ActionResult<Compania>> GetCompaniaPorId(int Id)
         {
-            return await _BMCompania.ObtenerCompaniaPorId(IdSiesa);
+            return await _BMCompania.ObtenerCompaniaPorId(Id);
         }
 
         [HttpPost]
@@ -40,7 +40,7 @@ namespace GrupoBIOS_PEDWEB.API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<string>>> Put(Compania Compania)
+        public async Task<ActionResult<List<int>>> Put(Compania Compania)
         {
             var Compañia = await _BMCompania.ActualizarCompañia(Compania);
             return Compañia;

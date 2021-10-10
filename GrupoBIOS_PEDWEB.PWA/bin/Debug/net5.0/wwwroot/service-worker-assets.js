@@ -9,7 +9,7 @@
       "url": "_content\/MatBlazor\/dist\/matBlazor.js"
     },
     {
-      "hash": "sha256-lwAjBjhKtA9IwZRww6k2lFoigSnmaEHi20Vz9Ktbxss=",
+      "hash": "sha256-rkFwfCTefSpSb\/nb6bf\/CeJoLv0smCowOVJZISe15fk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -897,19 +897,19 @@
       "url": "_framework\/dotnet.5.0.10.js"
     },
     {
-      "hash": "sha256-zi1p9OhZep6dNAmHVnUP9ik3QCBRrKDgxj\/bf6W5ic8=",
+      "hash": "sha256-beiXdlS7c10ixWrl3dSgdWMFvfWa34lcofTlj1KKFbU=",
       "url": "_framework\/GrupoBIOS_PEDWEB.DT.dll"
     },
     {
-      "hash": "sha256-xQohJUjqvS51h8aUEcwgabOX2R7lr9X6pqyEfOXhnZU=",
+      "hash": "sha256-CrHxhpMATc+1DtbeXct9fhRZrvTCxPGfDXT04bxh1TA=",
       "url": "_framework\/GrupoBIOS_PEDWEB.DT.pdb"
     },
     {
-      "hash": "sha256-3aVryIMyvJzuZw85jlvmMeB+02M4HshZI+tFn5qrVdw=",
+      "hash": "sha256-FMTYBm+UI3QkG34cV\/TAI9qXknuNuyYwV1L1ZWW4fyY=",
       "url": "_framework\/GrupoBIOS_PEDWEB.PWA.dll"
     },
     {
-      "hash": "sha256-04UY0PpedRL40Z36hp5n+Id3fUGEDqUTfb0g6Nrl5qk=",
+      "hash": "sha256-\/+zWnWhAvBzDiNdU8y0vj\/38A0lNJ3\/RCnt8bc+ulAE=",
       "url": "_framework\/GrupoBIOS_PEDWEB.PWA.pdb"
     },
     {
@@ -1801,7 +1801,7 @@
       "url": "_framework\/dotnet.5.0.10.js.gz"
     },
     {
-      "hash": "sha256-nIY10mrP1dCFwRQnQI7WUtm4emZk5q9FUxYfS+II5VI=",
+      "hash": "sha256-m77\/6DmGS\/iXQ3rKqRW7thGWUINLYb+M6lCihE61fgU=",
       "url": "_framework\/GrupoBIOS_PEDWEB.DT.dll.gz"
     },
     {
@@ -1889,5 +1889,5 @@
       "url": "GrupoBIOS_PEDWEB.PWA.bundle.scp.css"
     }
   ],
-  "version": "8ERhtE6K"
+  "version": "eOHv7Jr9"
 };

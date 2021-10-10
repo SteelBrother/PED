@@ -17,6 +17,8 @@ namespace GrupoBIOS_PEDWEB.PWA.Componentes.Administracion
         [Parameter] public int CompaniaId { get; set; }
         [Inject] IMatDialogService MatDialogService { get; set; }
 
+        public List<string> NombreCompanias { get; set; }
+
         public string CompaniaSeleccionada = "";
 
         public void CompaniaHasChanged(ChangeEventArgs e)
@@ -44,5 +46,23 @@ namespace GrupoBIOS_PEDWEB.PWA.Componentes.Administracion
         {
             var result = await MatDialogService.PromptAsync("What is your name?");
         }
+
+        protected override void OnInitialized()
+        {
+            if (ListaCompanias.Any())
+            {
+                foreach (var item in ListaCompanias)
+                {
+                    NombreCompanias.Add(item.Nombre);
+                }
+            }
+            StateHasChanged();
+        }
+
+        public async Task DepartamentoHasChanged(ChangeEventArgs e)
+        {
+            
+        }
+
     }
 }

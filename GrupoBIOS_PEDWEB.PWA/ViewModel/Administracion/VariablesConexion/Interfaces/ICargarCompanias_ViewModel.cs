@@ -11,7 +11,8 @@ namespace GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.VariablesConexion.Interf
     {
         List<Compania> ListaCompanias { get; set; }
         Compania Compania { get; set; }
-        Task<List<Compania>> CargarCompanias();
+        Task CargarCompanias();
+        Task<Compania> CargarCompaniaPorId(int Id);
 
     }
 }

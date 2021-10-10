@@ -17,8 +17,8 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
         private readonly IConexionRest _conexion;
         private readonly ISettings _settings;
         private readonly IMostrarMensajes _mostrarMensajes;
-        private readonly ILogger<ICargarCompanias_Model> _logger;
-        public CargarCompanias_Model(IConexionRest conexion, ISettings settings, IMostrarMensajes mostrarMensajes, ILogger<ICargarCompanias_Model> logger)
+        private readonly ILogger<CargarCompanias_Model> _logger;
+        public CargarCompanias_Model(IConexionRest conexion, ISettings settings, IMostrarMensajes mostrarMensajes, ILogger<CargarCompanias_Model> logger)
         {
             _conexion = conexion;
             _settings = settings;
@@ -33,7 +33,7 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
 
                 var httpResponse = await _conexion.Get<List<Compania>>($"{ApiUrl}/Companias");
 
-                if (!httpResponse.Error)
+                if (httpResponse.Response != null)
                 {
                     //await _mostrarMensajes.MostrarMensajeExitoso("Se ha cargado las compañias exitosamente.");
                     return httpResponse.Response.ToList();
@@ -50,6 +50,32 @@ namespace GrupoBIOS_PEDWEB.PWA.Model.Administracion.VariablesConexion
                     //await _mostrarMensajes.MostrarMensajeError("No se ha podido cargar la Compañia, intentelo de nuevo.");
                 }
                 return new List<Compania>();
+            }
+        }
+
+        public async Task<Compania> CargarCompaniaPorId(int Id)
+        {
+            try
+            {
+                var ApiUrl = await _settings.GetApiUrl();
+
+                var httpResponse = await _conexion.Get<Compania>($"{ApiUrl}/Companias/{Id}");
+                //var httpResponse = await _conexion.Get<Compania>($"https://localhost:44348/api/Companias/1");
+
+                if (httpResponse.Response != null)
+                {
+                    return httpResponse.Response;
+                }
+                return new Compania();
+
+            }
+            catch (Exception ex)
+            {
+                if (ex.GetType().ToString() != "WebAssembly.JSException" && ex.GetType().ToString() != "System.Net.Http.HttpRequestException" && ex.GetType().ToString() != "System.OperationCanceledException")
+                {
+                    _logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
+                }
+                return new Compania();
             }
         }
     }

@@ -1,6 +1,31 @@
 ﻿@page "/Productos"
-<h3>Productos</h3>
+@inject IConsultarPortafolio_ViewModel ConsultarProductos
+<EditForm Model="ConsultarProductos.portafolio">
 
-@code {
 
-}
+    <MatAccordion>
+        <MatExpansionPanel Style="box-shadow: none;">
+            <MatExpansionPanelSummary>
+                <MatExpansionPanelHeader>
+                    <div>
+                        PRIMERO
+                    </div>
+                </MatExpansionPanelHeader>
+            </MatExpansionPanelSummary>
+            <MatExpansionPanelDetails Class="detalles-acordeon">
+                <div class="content">
+
+                </div>
+            </MatExpansionPanelDetails>
+        </MatExpansionPanel>
+    </MatAccordion>
+</EditForm> 
+@code 
+{ 
+
+    protected async override void OnInitialized()
+    {
+        await ConsultarProductos.CargarPortafolioPorCliente(1, "993",1);
+
+    }
+ }

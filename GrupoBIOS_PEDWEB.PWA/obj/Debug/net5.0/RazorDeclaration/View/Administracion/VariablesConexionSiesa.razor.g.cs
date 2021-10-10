@@ -117,6 +117,13 @@ using MatBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\_Imports.razor"
+using GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.Productos.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/variablesConexionSiesa")]
     public partial class VariablesConexionSiesa : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,19 +133,66 @@ using MatBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
+#line 100 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Administracion\VariablesConexionSiesa.razor"
       
 
-    private List<Compania> ListCompany { get; set; }
+    //public int CompaniaSeleccionada { get; set; }
+    int CompaniaSeleccionada = 0;
+
+    public Compania compania = new Compania();
     protected async override void OnInitialized()
     {
-        ListCompany = await CargarCompaniasViewModel.CargarCompanias();
+        await CargarCompaniasViewModel.CargarCompanias();
+        StateHasChanged();
+    }
+
+    public async void CompaniaHasChanged(ChangeEventArgs e)
+    {
+        try
+        {
+            CompaniaSeleccionada = int.Parse(e.Value.ToString());
+
+            if (CompaniaSeleccionada != 0)
+            {
+                var response = await CargarCompaniasViewModel.CargarCompaniaPorId(CompaniaSeleccionada);
+
+                compania.Id = response.Id;
+                compania.Nombre = response.Nombre;
+                compania.IdSiesa = response.IdSiesa;
+                compania.NombreDB = response.NombreDB;
+                StateHasChanged();
+            }
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
 
     }
+
+    async void GuardarCompania()
+    {
+        try
+        {
+            await GuardarVariablesConexionViewModel.GuardarCompaniaAsync(compania);
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+    }
+
+    async void CrearCompania()
+    {
+    }
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMatDialogService MatDialogService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGuardarVariablesConexion_ViewModel GuardarVariablesConexionViewModel { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarCompanias_ViewModel CargarCompaniasViewModel { get; set; }
     }

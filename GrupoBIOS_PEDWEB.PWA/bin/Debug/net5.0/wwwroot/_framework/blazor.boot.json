@@ -224,13 +224,13 @@
       "mscorlib.dll": "sha256-7WjHY56PbksCp7YOxNV59r6MqLujjAH8vhnMJ+zVezY=",
       "netstandard.dll": "sha256-5TcSqPhm3fAT6s3NH7+BMGakcfGgZGd3\/\/cVwVs2VPI=",
       "System.Private.CoreLib.dll": "sha256-VJv3DLM\/G0m\/RnTeWL9X8mkbxlsn8nNRhm0BHYEY+uo=",
-      "GrupoBIOS_PEDWEB.DT.dll": "sha256-zi1p9OhZep6dNAmHVnUP9ik3QCBRrKDgxj\/bf6W5ic8=",
-      "GrupoBIOS_PEDWEB.PWA.dll": "sha256-3aVryIMyvJzuZw85jlvmMeB+02M4HshZI+tFn5qrVdw="
+      "GrupoBIOS_PEDWEB.DT.dll": "sha256-beiXdlS7c10ixWrl3dSgdWMFvfWa34lcofTlj1KKFbU=",
+      "GrupoBIOS_PEDWEB.PWA.dll": "sha256-FMTYBm+UI3QkG34cV\/TAI9qXknuNuyYwV1L1ZWW4fyY="
     },
     "lazyAssembly": null,
     "pdb": {
-      "GrupoBIOS_PEDWEB.DT.pdb": "sha256-xQohJUjqvS51h8aUEcwgabOX2R7lr9X6pqyEfOXhnZU=",
-      "GrupoBIOS_PEDWEB.PWA.pdb": "sha256-04UY0PpedRL40Z36hp5n+Id3fUGEDqUTfb0g6Nrl5qk="
+      "GrupoBIOS_PEDWEB.DT.pdb": "sha256-CrHxhpMATc+1DtbeXct9fhRZrvTCxPGfDXT04bxh1TA=",
+      "GrupoBIOS_PEDWEB.PWA.pdb": "sha256-\/+zWnWhAvBzDiNdU8y0vj\/38A0lNJ3\/RCnt8bc+ulAE="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-PvlHrby1PYtdX46ITs6pB8iDNqXNcewh8Eoa\/Gm2+GM=",

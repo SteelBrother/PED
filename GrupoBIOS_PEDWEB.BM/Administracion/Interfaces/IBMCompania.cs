@@ -12,7 +12,7 @@ namespace GrupoBIOS_PEDWEB.BM.Administracion.Interfaces
     {
         Task<ActionResult<ICollection<Compania>>> ObtenerCompanias();
         Task<ActionResult<Compania>> ObtenerCompaniaPorId(int Id);
-        Task<ActionResult<List<string>>> ActualizarCompañia(Compania Compañia);
+        Task<ActionResult<List<int>>> ActualizarCompañia(Compania Compañia);
         Task<ActionResult<List<string>>> GuardarCompañia(Compania Compañia);
        
     }

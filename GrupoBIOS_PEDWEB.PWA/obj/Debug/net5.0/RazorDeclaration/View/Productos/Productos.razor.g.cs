@@ -117,6 +117,13 @@ using MatBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\_Imports.razor"
+using GrupoBIOS_PEDWEB.PWA.ViewModel.Administracion.Productos.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Productos")]
     public partial class Productos : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -125,6 +132,21 @@ using MatBlazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 24 "C:\Users\Admin\source\repos\GrupoBIOS_PEDWEB\GrupoBIOS_PEDWEB.PWA\View\Productos\Productos.razor"
+  
+
+    protected async override void OnInitialized()
+    {
+        await ConsultarProductos.CargarPortafolioPorCliente(1, "993",1);
+
+    }
+ 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IConsultarPortafolio_ViewModel ConsultarProductos { get; set; }
     }
 }
 #pragma warning restore 1591
